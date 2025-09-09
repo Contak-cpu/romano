@@ -21,8 +21,9 @@ const Hero: React.FC = () => {
             <span className="text-blue-600 block">próximo auto</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            En AutoSelect tenemos los mejores vehículos usados de Argentina. 
+            En López Automotores tenemos los mejores vehículos usados de Argentina. 
             Calidad garantizada, precios justos y la confianza que necesitás para tu próxima compra.
+            Tomamos autos a consignación - No realizamos venta inmediata al contado.
           </p>
           
           {/* Stats */}
@@ -61,7 +62,7 @@ const Hero: React.FC = () => {
               onClick={() => {
                 const message = "Hola! Me gustaría recibir información sobre los vehículos disponibles.";
                 const encodedMessage = encodeURIComponent(message);
-                const whatsappUrl = `https://wa.me/5491123456789?text=${encodedMessage}`;
+                const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
                 window.open(whatsappUrl, '_blank');
               }}
               className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 block md:inline-block"

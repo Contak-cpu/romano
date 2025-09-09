@@ -19,7 +19,7 @@ const Header: React.FC = () => {
               <Car className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">AutoSelect</h1>
+              <h1 className="text-xl font-bold text-gray-900">López Automotores</h1>
               <p className="text-xs text-blue-600">Tu próximo auto te espera</p>
             </div>
           </div>

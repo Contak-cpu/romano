@@ -13,13 +13,14 @@ const Footer: React.FC = () => {
                 <Car className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">AutoSelect</h3>
+                <h3 className="text-2xl font-bold">López Automotores</h3>
                 <p className="text-blue-400">Tu próximo auto te espera</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Somos una empresa familiar con más de 10 años de experiencia en el mercado automotriz argentino. 
-              Nos especializamos en vehículos usados de calidad con garantía y servicio post-venta.
+              Nos especializamos en vehículos usados de calidad y tomamos autos a consignación. 
+              No realizamos venta inmediata al contado.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -46,10 +47,10 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Teléfono</p>
                   <a 
-                    href="tel:+5491123456789" 
+                    href="tel:+543546544885" 
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    +54 9 11 2345-6789
+                    +54 3546 544885
                   </a>
                 </div>
               </div>
@@ -58,10 +59,10 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Email</p>
                   <a 
-                    href="mailto:info@autoselect.com.ar" 
+                    href="mailto:info@lopezautomotores.com.ar" 
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    info@autoselect.com.ar
+                    info@lopezautomotores.com.ar
                   </a>
                 </div>
               </div>
@@ -70,9 +71,9 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Ubicación</p>
                   <p className="text-white">
-                    Av. Corrientes 1234<br />
-                    Villa Crespo, CABA<br />
-                    C.P. 1414
+                    Pedro Rosenda 445<br />
+                    Santa Rosa de Calamuchita<br />
+                    C.P. X5196
                   </p>
                 </div>
               </div>
@@ -111,7 +112,7 @@ const Footer: React.FC = () => {
                 onClick={() => {
                   const message = "Hola! Me gustaría agendar una cita para visitar el local y ver vehículos.";
                   const encodedMessage = encodeURIComponent(message);
-                  const whatsappUrl = `https://wa.me/5491123456789?text=${encodedMessage}`;
+                  const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
                   window.open(whatsappUrl, '_blank');
                 }}
                 className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2 w-full justify-center"
@@ -129,7 +130,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              <p>&copy; 2024 AutoSelect. Todos los derechos reservados.</p>
+              <p>&copy; 2024 López Automotores. Todos los derechos reservados.</p>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-blue-400 transition-colors duration-300">
