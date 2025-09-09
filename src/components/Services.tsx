@@ -118,7 +118,7 @@ const Services: React.FC = () => {
                 onClick={() => {
                   const message = "Hola! Me gustaría recibir información sobre la venta de mi vehículo.";
                   const encodedMessage = encodeURIComponent(message);
-                  const whatsappUrl = `https://wa.me/5491123456789?text=${encodedMessage}`;
+                  const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
                   window.open(whatsappUrl, '_blank');
                 }}
                 className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center space-x-3 mx-auto"

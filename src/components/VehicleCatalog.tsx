@@ -97,7 +97,7 @@ const VehicleCatalog: React.FC = () => {
               onClick={() => {
                 const message = "Hola! No encontré el vehículo que busco en la página. ¿Podrían ayudarme a encontrar otras opciones?";
                 const encodedMessage = encodeURIComponent(message);
-                const whatsappUrl = `https://wa.me/5491123456789?text=${encodedMessage}`;
+                const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
                 window.open(whatsappUrl, '_blank');
               }}
               className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300"
@@ -121,7 +121,7 @@ const VehicleCatalog: React.FC = () => {
               onClick={() => {
                 const message = "Hola! Me gustaría saber qué otros vehículos tienen disponibles o pueden conseguir.";
                 const encodedMessage = encodeURIComponent(message);
-                const whatsappUrl = `https://wa.me/5491123456789?text=${encodedMessage}`;
+                const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
                 window.open(whatsappUrl, '_blank');
               }}
               className="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
