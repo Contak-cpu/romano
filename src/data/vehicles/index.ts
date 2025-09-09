@@ -20,3 +20,5 @@ export {
   fiatToroVolcanoAt94x42016,
   renaultDusterOrochDynamique2017
 };
+
+export const whatsappNumber = '+543546544885';
