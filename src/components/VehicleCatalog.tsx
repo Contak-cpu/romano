@@ -36,8 +36,8 @@ const VehicleCatalog: React.FC = () => {
         </div>
 
         {/* Search and Filter */}
-        <div className="mb-12">
-          <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+        <div className="mb-8 sm:mb-12">
+          <div className="flex flex-col md:flex-row gap-3 sm:gap-4 max-w-2xl mx-auto">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
@@ -45,7 +45,7 @@ const VehicleCatalog: React.FC = () => {
                 placeholder="Buscar por marca o modelo..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
               />
             </div>
             <div className="relative">
@@ -53,7 +53,7 @@ const VehicleCatalog: React.FC = () => {
               <select
                 value={filterAvailable}
                 onChange={(e) => setFilterAvailable(e.target.value as 'all' | 'available' | 'sold')}
-                className="pl-10 pr-8 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white min-w-[180px]"
+                className="pl-10 pr-8 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white min-w-[180px] text-base"
               >
                 <option value="all">Todos los vehículos</option>
                 <option value="available">Solo disponibles</option>
@@ -71,7 +71,7 @@ const VehicleCatalog: React.FC = () => {
         </div>
 
         {/* Vehicle Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {filteredVehicles.map((vehicle) => (
             <VehicleCard 
               key={vehicle.id} 
