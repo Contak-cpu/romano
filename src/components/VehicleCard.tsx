@@ -22,6 +22,9 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
   };
 
   const formatPrice = (price: number) => {
+    if (price === 0) {
+      return 'Consultar precio';
+    }
     return new Intl.NumberFormat('es-AR', {
       style: 'currency',
       currency: 'ARS',
