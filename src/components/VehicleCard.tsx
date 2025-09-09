@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Vehicle } from '../types/Vehicle';
-import { ChevronLeft, ChevronRight, Calendar, Fuel, Settings, Zap, Eye, Share2, Facebook, Instagram } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, Fuel, Settings, Zap, Eye, Share2 } from 'lucide-react';
 import { whatsappNumber } from '../data/vehicles';
-import { shareToFacebook, shareToInstagram } from '../utils/socialShare';
+import SocialShareModal from './SocialShareModal';
 
 interface VehicleCardProps {
   vehicle: Vehicle;
@@ -13,6 +13,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [showShareModal, setShowShareModal] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
 
   const nextImage = (e: React.MouseEvent) => {
@@ -73,14 +74,9 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleFacebookShare = (e: React.MouseEvent) => {
+  const handleShareClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    shareToFacebook(vehicle);
-  };
-
-  const handleInstagramShare = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    shareToInstagram(vehicle);
+    setShowShareModal(true);
   };
 
   return (
@@ -205,23 +201,14 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
             <span className="text-sm sm:text-base">Ver Detalles Completos</span>
           </button>
           
-          {/* Social Share Buttons */}
-          <div className="flex space-x-2">
-            <button
-              onClick={handleFacebookShare}
-              className="flex-1 bg-blue-600 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 shadow-lg touch-manipulation"
-            >
-              <Facebook className="w-4 h-4" />
-              <span className="text-xs sm:text-sm">Facebook</span>
-            </button>
-            <button
-              onClick={handleInstagramShare}
-              className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 shadow-lg touch-manipulation"
-            >
-              <Instagram className="w-4 h-4" />
-              <span className="text-xs sm:text-sm">Instagram</span>
-            </button>
-          </div>
+          {/* Share Button */}
+          <button
+            onClick={handleShareClick}
+            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg touch-manipulation"
+          >
+            <Share2 className="w-4 h-4" />
+            <span className="text-sm sm:text-base">Compartir en Redes Sociales</span>
+          </button>
           
           {vehicle.available && (
             <button
@@ -236,6 +223,14 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
           )}
         </div>
       </div>
+
+      {/* Social Share Modal */}
+      {showShareModal && (
+        <SocialShareModal
+          vehicle={vehicle}
+          onClose={() => setShowShareModal(false)}
+        />
+      )}
     </div>
   );
 };
