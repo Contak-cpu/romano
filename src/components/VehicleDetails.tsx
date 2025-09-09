@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Vehicle } from '../types/Vehicle';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Facebook, Instagram, Share2 } from 'lucide-react';
 import { whatsappNumber } from '../data/vehicles';
+import { shareToFacebook, shareToInstagram } from '../utils/socialShare';
 
 interface VehicleDetailsProps {
   vehicle: Vehicle;
@@ -61,6 +62,14 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleFacebookShare = () => {
+    shareToFacebook(vehicle);
+  };
+
+  const handleInstagramShare = () => {
+    shareToInstagram(vehicle);
   };
 
   return (
@@ -214,6 +223,27 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
                       : 'bg-red-100 text-red-800'
                   }`}>
                     {vehicle.available ? 'Disponible' : 'Vendido'}
+                  </div>
+                </div>
+
+                {/* Social Share Buttons */}
+                <div className="mb-4 sm:mb-6">
+                  <h4 className="font-semibold text-gray-900 mb-3 sm:mb-4 text-sm sm:text-base text-center">Compartir en redes sociales</h4>
+                  <div className="flex space-x-3 sm:space-x-4">
+                    <button
+                      onClick={handleFacebookShare}
+                      className="flex-1 bg-blue-600 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg touch-manipulation"
+                    >
+                      <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="text-xs sm:text-sm">Facebook</span>
+                    </button>
+                    <button
+                      onClick={handleInstagramShare}
+                      className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg touch-manipulation"
+                    >
+                      <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="text-xs sm:text-sm">Instagram</span>
+                    </button>
                   </div>
                 </div>
 
