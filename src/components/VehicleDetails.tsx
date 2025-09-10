@@ -1,8 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Vehicle } from '../types/Vehicle';
-import { X, ChevronLeft, ChevronRight, Share2 } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { whatsappNumber } from '../data/vehicles';
-import SocialShareModal from './SocialShareModal';
 
 interface VehicleDetailsProps {
   vehicle: Vehicle;
@@ -13,7 +12,6 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const [showShareModal, setShowShareModal] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
 
   const nextImage = () => {
@@ -65,9 +63,6 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleShareClick = () => {
-    setShowShareModal(true);
-  };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-2 sm:p-4 z-50">
@@ -223,16 +218,6 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
                   </div>
                 </div>
 
-                {/* Share Button */}
-                <div className="mb-4 sm:mb-6">
-                  <button
-                    onClick={handleShareClick}
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg touch-manipulation"
-                  >
-                    <Share2 className="w-5 h-5" />
-                    <span>Compartir en Redes Sociales</span>
-                  </button>
-                </div>
 
                 {vehicle.available && (
                   <div className="space-y-3 sm:space-y-4">
@@ -269,13 +254,6 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onClose }) => 
         </div>
       </div>
 
-      {/* Social Share Modal */}
-      {showShareModal && (
-        <SocialShareModal
-          vehicle={vehicle}
-          onClose={() => setShowShareModal(false)}
-        />
-      )}
     </div>
   );
 };
