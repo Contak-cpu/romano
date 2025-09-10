@@ -18,12 +18,12 @@ const Header: React.FC = () => {
             <div className="w-10 h-10 rounded-lg overflow-hidden">
               <img 
                 src="https://scontent.fcor2-2.fna.fbcdn.net/v/t39.30808-1/348582432_123822964045640_7770769562979972224_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeFA9kr8zfLkClrcI0tm_Dfg95zgJ-Ei_1L3nOAn4SL_Uj1YqLOuITgNxpSpqsQQgv_Lxi0dCMD3rcaA98FSuzwu&_nc_ohc=m5y2wgTBkiIQ7kNvwFz2DAO&_nc_oc=Adk3uYpL223qzLdJNWj5TvYKACFEH7jJRY2yASzQa6KDGRk8zWz9QUwdVjdWVCaR4D4&_nc_zt=24&_nc_ht=scontent.fcor2-2.fna&_nc_gid=9YVlKtdrAhjf4lcii6o5JA&oh=00_AfaNBmMg1JbREPTvUdO5QoUvFLt2cr8M5lG63SlhFULTTA&oe=68C675AF"
-                alt="López Automotores Logo"
+                alt="Romano Automotores Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">López Automotores</h1>
+              <h1 className="text-xl font-bold text-gray-900">Romano Automotores</h1>
               <p className="text-xs text-blue-600">Tu próximo auto te espera</p>
             </div>
           </div>

@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             <span className="text-blue-600 block">próximo auto</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            En López Automotores tenemos los mejores vehículos usados de Argentina. 
+            En Romano Automotores tenemos los mejores vehículos usados de Argentina. 
             Calidad garantizada, precios justos y la confianza que necesitás para tu próxima compra.
             Tomamos autos a consignación - No realizamos venta inmediata al contado.
           </p>

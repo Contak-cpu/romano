@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
               <div className="w-12 h-12 rounded-lg overflow-hidden">
                 <img 
                   src="https://scontent.fcor2-2.fna.fbcdn.net/v/t39.30808-1/348582432_123822964045640_7770769562979972224_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeFA9kr8zfLkClrcI0tm_Dfg95zgJ-Ei_1L3nOAn4SL_Uj1YqLOuITgNxpSpqsQQgv_Lxi0dCMD3rcaA98FSuzwu&_nc_ohc=m5y2wgTBkiIQ7kNvwFz2DAO&_nc_oc=Adk3uYpL223qzLdJNWj5TvYKACFEH7jJRY2yASzQa6KDGRk8zWz9QUwdVjdWVCaR4D4&_nc_zt=24&_nc_ht=scontent.fcor2-2.fna&_nc_gid=9YVlKtdrAhjf4lcii6o5JA&oh=00_AfaNBmMg1JbREPTvUdO5QoUvFLt2cr8M5lG63SlhFULTTA&oe=68C675AF"
-                  alt="López Automotores Logo"
+                  alt="Romano Automotores Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">López Automotores</h3>
+                <h3 className="text-2xl font-bold">Romano Automotores</h3>
                 <p className="text-blue-400">Tu próximo auto te espera</p>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              <p>&copy; 2024 López Automotores. Todos los derechos reservados.</p>
+              <p>&copy; 2024 Romano Automotores. Todos los derechos reservados.</p>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-blue-400 transition-colors duration-300">
