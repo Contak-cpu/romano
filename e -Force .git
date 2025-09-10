@@ -1,0 +1,23 @@
+[33m3881573[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature-prueba[m[33m)[m Initial commit - Romano Market project
+[33m98960f9[m[33m ([m[1;32mmain[m[33m)[m revert: Eliminar completamente funcionalidad de compartir en redes sociales
+[33mb6242a4[m feat: Mejorar integración de redes sociales - detectar móvil y abrir apps automáticamente
+[33mec41230[m feat: Agregar integración para compartir vehículos en Instagram y Facebook
+[33m58536be[m feat: Agregar logo personalizado de López Automotores en Header, Footer y favicon
+[33m12b0311[m Fix: Corregir configuración de Vercel para SPA - arreglar error MIME type
+[33m2d1d53f[m Configuración para despliegue automático en Vercel con dominio lopezautomotores.vercel.app
+[33ma7ca5f2[m Cambiar título de página a López Automotores
+[33mbe48d33[m Optimizar Hero para móviles - Reducir scroll y mejorar distribución
+[33m138ffa5[m Optimizar aplicación para dispositivos móviles
+[33m2495036[m Agregar nuevos vehículos con imágenes reales
+[33me45584b[m Reemplazar imágenes de Instagram con imágenes placeholder de Unsplash para evitar errores CORS
+[33m572ae98[m Corregir referencia circular en vehicles.ts - eliminar archivo duplicado
+[33m5780d18[m Merge branch 'main' of https://github.com/Contak-cpu/agenciamarket
+[33mfda6443[m Agregar 4 nuevos vehÃ­culos al catÃ¡logo: Fiat Fiorino, Jeep Wrangler, Fiat Toro y Renault Oroch
+[33m47aa4d2[m Agregar 4 nuevos vehículos al catálogo: Fiat Fiorino, Jeep Wrangler, Fiat Toro y Renault Oroch
+[33mc5fff9d[m Deleted vite.config.ts.timestamp-1757444983903-67c9ca14179d8.mjs
+[33m8f753ff[m Added vite.config.ts.timestamp-1757444983903-67c9ca14179d8.mjs
+[33ma498d79[m Actualizar números de WhatsApp y mejorar imágenes de vehículos
+[33mee1e00f[m Deleted vite.config.ts.timestamp-1757444069732-ae61e51b2b6b08.mjs
+[33md3681ab[m Update codebase with external changes
+[33m1683bfd[m Actualizar información de la agencia a López Automotores
+[33mbbe2b7e[m Start repository
