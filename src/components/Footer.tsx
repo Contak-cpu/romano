@@ -9,22 +9,22 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 rounded-lg overflow-hidden">
+              <div className="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
                 <img 
-                  src="https://scontent.fcor2-2.fna.fbcdn.net/v/t39.30808-1/348582432_123822964045640_7770769562979972224_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeFA9kr8zfLkClrcI0tm_Dfg95zgJ-Ei_1L3nOAn4SL_Uj1YqLOuITgNxpSpqsQQgv_Lxi0dCMD3rcaA98FSuzwu&_nc_ohc=m5y2wgTBkiIQ7kNvwFz2DAO&_nc_oc=Adk3uYpL223qzLdJNWj5TvYKACFEH7jJRY2yASzQa6KDGRk8zWz9QUwdVjdWVCaR4D4&_nc_zt=24&_nc_ht=scontent.fcor2-2.fna&_nc_gid=9YVlKtdrAhjf4lcii6o5JA&oh=00_AfaNBmMg1JbREPTvUdO5QoUvFLt2cr8M5lG63SlhFULTTA&oe=68C675AF"
-                  alt="Romano Automotores Logo"
-                  className="w-full h-full object-cover"
+                  src="https://media.discordapp.net/attachments/877739044228960266/1417854431558631555/image-removebg-preview_20.png?ex=68cbff56&is=68caadd6&hm=52cacc97b580105d4174f4f556a7d93757b59b9357e971016564952c61b066c5&=&format=webp&quality=lossless"
+                  alt="Salón del Automóvil Logo"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Romano Automotores</h3>
-                <p className="text-blue-400">Tu próximo auto te espera</p>
+                <h3 className="text-2xl font-bold">Salón del Automóvil</h3>
+                <p className="text-blue-400">Multimarcas 0 Km</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              Somos una empresa familiar con más de 10 años de experiencia en el mercado automotriz argentino. 
-              Nos especializamos en vehículos usados de calidad y tomamos autos a consignación. 
-              No realizamos venta inmediata al contado.
+              Somos una empresa familiar con más de 15 años de experiencia en el mercado automotriz argentino. 
+              Nos especializamos en vehículos 0 Km de las principales marcas del mercado. 
+              Multimarcas con garantía oficial y financiación disponible.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -51,10 +51,17 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Teléfono</p>
                   <a 
-                    href="tel:+543546544885" 
+                    href="tel:+543541423999" 
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    +54 3546 544885
+                    03541-423999
+                  </a>
+                  <br />
+                  <a 
+                    href="tel:+543541420953" 
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
+                    03541-420953
                   </a>
                 </div>
               </div>
@@ -63,10 +70,10 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Email</p>
                   <a 
-                    href="mailto:info@lopezautomotores.com.ar" 
+                    href="mailto:info@salondelautomovil.com.ar" 
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    info@lopezautomotores.com.ar
+                    info@salondelautomovil.com.ar
                   </a>
                 </div>
               </div>
@@ -75,9 +82,9 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Ubicación</p>
                   <p className="text-white">
-                    Pedro Rosenda 445<br />
-                    Santa Rosa de Calamuchita<br />
-                    C.P. X5196
+                    San Martín Nº 490<br />
+                    Villa Carlos Paz<br />
+                    C.P. 5152 - Córdoba
                   </p>
                 </div>
               </div>
@@ -114,9 +121,9 @@ const Footer: React.FC = () => {
             <div className="mt-8">
               <button 
                 onClick={() => {
-                  const message = "Hola! Me gustaría agendar una cita para visitar el local y ver vehículos.";
+                  const message = "Hola! Me gustaría agendar una cita para visitar el local y ver vehículos 0 Km.";
                   const encodedMessage = encodeURIComponent(message);
-                  const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
+                  const whatsappUrl = `https://wa.me/543541579927?text=${encodedMessage}`;
                   window.open(whatsappUrl, '_blank');
                 }}
                 className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2 w-full justify-center"
@@ -134,7 +141,11 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              <p>&copy; 2024 Romano Automotores. Todos los derechos reservados.</p>
+              <p>&copy; 2025 Salón del Automóvil - Multimarcas 0 Km - San Martín Nº 490</p>
+              <p>CP 5152 - VILLA CARLOS PAZ - CORDOBA</p>
+              <p>Tel. 03541-423999 / 420953 | WhatsApp 3541-579927</p>
+              <p>e-mail: info@salondelautomovil.com.ar</p>
+              <p>Copyright 2025 - GRUPO SARKIS S.A.S.</p>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-blue-400 transition-colors duration-300">

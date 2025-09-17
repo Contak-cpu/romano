@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
             <span className="text-blue-600 block">próximo auto</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            En Romano Automotores tenemos los mejores vehículos usados de Argentina. 
-            Calidad garantizada, precios justos y la confianza que necesitás para tu próxima compra.
-            Tomamos autos a consignación - No realizamos venta inmediata al contado.
+            En Salón del Automóvil tenemos los mejores vehículos 0 Km de Argentina. 
+            Multimarcas con calidad garantizada, precios competitivos y la confianza que necesitás para tu próxima compra.
+            Especialistas en vehículos nuevos de las principales marcas del mercado.
           </p>
           
           {/* Stats */}
@@ -40,13 +40,13 @@ const Hero: React.FC = () => {
                 <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
               </div>
               <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">100%</div>
-              <div className="text-xs sm:text-sm text-gray-600 text-center">Vehículos verificados</div>
+              <div className="text-xs sm:text-sm text-gray-600 text-center">Vehículos 0 Km</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-purple-100 p-2 sm:p-3 rounded-full mb-2 sm:mb-3">
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
               </div>
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">+500</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">+1000</div>
               <div className="text-xs sm:text-sm text-gray-600 text-center">Clientes satisfechos</div>
             </div>
           </div>
@@ -60,9 +60,9 @@ const Hero: React.FC = () => {
             </button>
             <button 
               onClick={() => {
-                const message = "Hola! Me gustaría recibir información sobre los vehículos disponibles.";
+                const message = "Hola! Me gustaría recibir información sobre los vehículos 0 Km disponibles.";
                 const encodedMessage = encodeURIComponent(message);
-                const whatsappUrl = `https://wa.me/543546544885?text=${encodedMessage}`;
+                const whatsappUrl = `https://wa.me/543541579927?text=${encodedMessage}`;
                 window.open(whatsappUrl, '_blank');
               }}
               className="border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-sm sm:text-base"

@@ -75,7 +75,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
 
   return (
     <div 
-      className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl cursor-pointer"
+      className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl cursor-pointer flex flex-col h-[800px]"
       onClick={() => onViewDetails(vehicle)}
     >
       {/* Image Carousel */}
@@ -140,30 +140,30 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
       </div>
 
       {/* Content */}
-      <div className="p-4 sm:p-6">
-        <div className="flex justify-between items-start mb-3 sm:mb-4">
-          <div className="flex-1 pr-2">
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900">
-              {vehicle.brand} {vehicle.model}
-            </h3>
-            <p className="text-gray-600 flex items-center mt-1 text-sm sm:text-base">
-              <Calendar className="w-4 h-4 mr-1" />
-              {vehicle.year}
-            </p>
-          </div>
-          <div className="text-right flex-shrink-0">
-            <p className="text-xl sm:text-2xl font-bold text-blue-600">
-              {formatPrice(vehicle.price)}
-            </p>
-          </div>
-        </div>
+      <div className="p-4 sm:p-6 flex-1 flex flex-col">
+        {/* Título del vehículo - Ancho completo */}
+        <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 min-h-[60px] flex items-start">
+          {vehicle.brand} {vehicle.model}
+        </h3>
 
-        <p className="text-gray-700 text-sm mb-3 sm:mb-4 leading-relaxed">
+        {/* Precio */}
+        <p className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 min-h-[40px] flex items-center">
+          {formatPrice(vehicle.price)}
+        </p>
+
+        {/* Año */}
+        <p className="text-gray-600 flex items-center mb-4 text-sm sm:text-base min-h-[30px]">
+          <Calendar className="w-4 h-4 mr-2" />
+          {vehicle.year}
+        </p>
+
+        {/* Descripción breve */}
+        <p className="text-gray-700 text-sm mb-4 leading-relaxed line-clamp-3 min-h-[60px]">
           {vehicle.description}
         </p>
 
-        {/* Quick Specs */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+        {/* Especificaciones técnicas */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6 min-h-[80px]">
           <div className="flex items-center text-sm text-gray-600">
             <Zap className="w-4 h-4 mr-2 text-blue-600" />
             {vehicle.specs.horsepower}
@@ -182,8 +182,8 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onViewDetails }) => 
           </div>
         </div>
 
-        {/* Action Buttons */}
-        <div className="space-y-2 sm:space-y-3">
+        {/* Botones de acción */}
+        <div className="space-y-3 sm:space-y-4 mt-auto">
           <button
             onClick={(e) => {
               e.stopPropagation();

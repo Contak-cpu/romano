@@ -15,16 +15,16 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg overflow-hidden">
+            <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
               <img 
-                src="https://scontent.fcor2-2.fna.fbcdn.net/v/t39.30808-1/348582432_123822964045640_7770769562979972224_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeFA9kr8zfLkClrcI0tm_Dfg95zgJ-Ei_1L3nOAn4SL_Uj1YqLOuITgNxpSpqsQQgv_Lxi0dCMD3rcaA98FSuzwu&_nc_ohc=m5y2wgTBkiIQ7kNvwFz2DAO&_nc_oc=Adk3uYpL223qzLdJNWj5TvYKACFEH7jJRY2yASzQa6KDGRk8zWz9QUwdVjdWVCaR4D4&_nc_zt=24&_nc_ht=scontent.fcor2-2.fna&_nc_gid=9YVlKtdrAhjf4lcii6o5JA&oh=00_AfaNBmMg1JbREPTvUdO5QoUvFLt2cr8M5lG63SlhFULTTA&oe=68C675AF"
-                alt="Romano Automotores Logo"
-                className="w-full h-full object-cover"
+                src="https://media.discordapp.net/attachments/877739044228960266/1417854431558631555/image-removebg-preview_20.png?ex=68cbff56&is=68caadd6&hm=52cacc97b580105d4174f4f556a7d93757b59b9357e971016564952c61b066c5&=&format=webp&quality=lossless"
+                alt="Salón del Automóvil Logo"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Romano Automotores</h1>
-              <p className="text-xs text-blue-600">Tu próximo auto te espera</p>
+              <h1 className="text-xl font-bold text-gray-900">Salón del Automóvil</h1>
+              <p className="text-xs text-blue-600">Multimarcas 0 Km</p>
             </div>
           </div>
           
