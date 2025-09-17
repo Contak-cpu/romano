@@ -28,32 +28,38 @@ const Header: React.FC = () => {
             </div>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
-            >
-              Inicio
-            </button>
-            <button 
-              onClick={() => scrollToSection('catalogo')}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
-            >
-              Vehículos
-            </button>
-            <button 
-              onClick={() => scrollToSection('servicios')}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
-            >
-              Servicios
-            </button>
-            <button 
-              onClick={() => scrollToSection('contacto')}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
-            >
-              Contacto
-            </button>
-          </nav>
+              <nav className="hidden md:flex space-x-8">
+                <button
+                  onClick={() => scrollToSection('inicio')}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                >
+                  Inicio
+                </button>
+                <button
+                  onClick={() => scrollToSection('catalogo')}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                >
+                  Vehículos
+                </button>
+                <button
+                  onClick={() => scrollToSection('otros-productos')}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                >
+                  Otros Productos
+                </button>
+                <button
+                  onClick={() => scrollToSection('servicios')}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                >
+                  Servicios
+                </button>
+                <button
+                  onClick={() => scrollToSection('contacto')}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                >
+                  Contacto
+                </button>
+              </nav>
 
           <div className="md:hidden">
             <button 
@@ -65,37 +71,43 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
-            <div className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('inicio')}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
-              >
-                Inicio
-              </button>
-              <button 
-                onClick={() => scrollToSection('catalogo')}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
-              >
-                Vehículos
-              </button>
-              <button 
-                onClick={() => scrollToSection('servicios')}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
-              >
-                Servicios
-              </button>
-              <button 
-                onClick={() => scrollToSection('contacto')}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
-              >
-                Contacto
-              </button>
-            </div>
-          </div>
-        )}
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+              <div className="md:hidden py-4 border-t border-gray-100">
+                <div className="flex flex-col space-y-4">
+                  <button
+                    onClick={() => scrollToSection('inicio')}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
+                  >
+                    Inicio
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('catalogo')}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
+                  >
+                    Vehículos
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('otros-productos')}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
+                  >
+                    Otros Productos
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('servicios')}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
+                  >
+                    Servicios
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('contacto')}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-left"
+                  >
+                    Contacto
+                  </button>
+                </div>
+              </div>
+            )}
       </div>
     </header>
   );
